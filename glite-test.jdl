@@ -1,0 +1,12 @@
+##################################
+# The GridPP CVMFS test JDL file #
+##################################
+Executable = "/bin/sh";
+# Replace "cernatschool.gridpp.ac.uk" with your VO's address, of course!
+Arguments = "run.sh /cvmfs/cernatschool.gridpp.ac.uk/cvmfs-test_001-00-00-master/ data000.txt";
+StdOutput = "stdout.txt";
+StdError = "stderr.txt";
+InputSandbox = {"run.sh", "data000.txt"};
+OutputSandbox = {"stdout.txt", "stderr.txt", "log_process-frames.log", "file-info.json"};
+#
+##################################

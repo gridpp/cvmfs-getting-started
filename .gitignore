@@ -1,0 +1,8 @@
+# Logging
+log*.log
+
+# Output
+*.json
+
+# Grid files
+jobIDfile
